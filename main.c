@@ -14,5 +14,8 @@
 
 int	main(int argc, char *argv[])
 {	
-	ft_invalid(argc, argv);
+	if (ft_invalid(argc, argv) == 1)
+	{
+		ft_putstr("Correct!");
+	}
 }
