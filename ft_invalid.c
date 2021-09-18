@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "_h/ft_invalid.h"
-#include "_h/ft_putchar.h"
-#include "_h/ft_putstr.h"
+#include "_h/main.h"
 
 int	ft_invalid(int argc, char *argv[])
 {
@@ -21,7 +19,7 @@ int	ft_invalid(int argc, char *argv[])
 	i = 0;
 	while (i < 31)
 	{
-		if (argc == 2 && i % 2 == 0 && '0' <= argv[1][i] && argv[1][i] <= '4')
+		if (argc == 2 && i % 2 == 0 && '1' <= argv[1][i] && argv[1][i] <= '4')
 		{
 			i++;
 		}

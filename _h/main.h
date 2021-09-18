@@ -1,9 +1,9 @@
-#ifndef LIBRARY_H
-#define LIBRARY_H
+#ifndef MAIN_H
+#define MAIN_H
 
-#include "ft_putchar.h"
-#include "ft_putstr.h"
-#include "ft_print_params.h"
-#include "ft_invalid.h"
+void	ft_putchar(char);
+void	ft_putstr(char*);
+int		ft_invalid(int argc, char *argv[]);
+void	ft_print_params(int, char**);
 
 #endif

@@ -11,8 +11,7 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-#include "_h/ft_putchar.h"
+#include "_h/main.h"
 
 void	ft_putchar(char c)
 {

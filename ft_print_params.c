@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "_h/ft_putchar.h"
-#include "_h/ft_print_params.h"
+#include "_h/main.h"
 
 void	ft_print_params(int argc, char *argv[])
 {
