@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_print_array.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmetten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/18 10:57:04 by tmetten           #+#    #+#             */
-/*   Updated: 2021/09/18 10:57:13 by tmetten          ###   ########.fr       */
+/*   Created: 2021/09/18 17:46:44 by tmetten           #+#    #+#             */
+/*   Updated: 2021/09/18 17:46:46 by tmetten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "_h/main.h"
+#include "main.h"
 
-void	ft_print_params(int argc, char *argv[])
+void	ft_print_array(int *nbr[])
 {
-	int	i;
-	int	j;
+	int	row;
+	int	column;
 
-	i = 1;
-	while (i < argc)
+	row = 0;
+	column = 0;
+	while (row < 4)
 	{
-		j = 0;
-		while (argv[i][j] != '\0')
+		while (column < 4)
 		{
-			ft_putchar(argv[i][j]);
-			j++;
-		}	
+			ft_putchar(nbr[row][column] + 48);
+			if (column != 3)
+			{
+				ft_putchar(' ');
+			}
+			column++;
+		}
 		ft_putchar('\n');
-		i++;
+		column = 0;
+		row++;
 	}
 }

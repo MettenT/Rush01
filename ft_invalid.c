@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "_h/main.h"
+#include "main.h"
 
 int	ft_invalid(int argc, char *argv[])
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < 31)
@@ -34,5 +34,5 @@ int	ft_invalid(int argc, char *argv[])
 			return (0);
 		}	
 	}	
-	return(1);
+	return (1);
 }
