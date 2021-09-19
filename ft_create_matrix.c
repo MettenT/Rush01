@@ -18,6 +18,11 @@ int	**ft_create_matrix(void)
 	int		**result;
 
 	result = malloc(sizeof(int) * 16);
+	if (!result)
+	{
+		ft_putstr("Error\n");
+		return (0);
+	}
 	i = 0;
 	while (i < 16)
 	{
