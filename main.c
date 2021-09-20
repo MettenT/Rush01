@@ -19,11 +19,14 @@ int	main(int argc, char *argv[])
 
 	if (ft_invalid(argc, argv) == 1)
 	{
-		ft_remove_white_spaces(argv[1]);
-		input = argv[1];
-		result = ft_create_matrix();
-		ft_initialize_array(result);
+		input = ft_remove_white_spaces(argv[1]);
+		result = ft_create_matrix(); 
+		ft_initialize_array(result); // result[4][4]
 		ft_print_array(result);
+		// result = malloc(sizeof(int) * 100);
+		// result has 20 int as an example
+		// free(result);  frees the memory not used by malloc in this case 80 int spaces
+
 	}
 	else
 		return (0);

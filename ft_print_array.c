@@ -23,7 +23,7 @@ void	ft_print_array(int *nbr[])
 	{
 		while (column < 4)
 		{
-			ft_putchar(nbr[row][column] + 48);
+			ft_putchar(nbr[row][column] + 48); // '0'   transforming int into char
 			if (column != 3)
 			{
 				ft_putchar(' ');

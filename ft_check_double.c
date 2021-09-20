@@ -12,62 +12,66 @@
 
 #include "main.h"
 
-// int ft_check_double_row(int *nbr[])
-// {
-// 	int	row;
-// 	int	column;
+int ft_check_double_row(int *nbr[])
+{
+	int	row;
+	int	column;
 
-// 	row = 0;
-// 	column = 0;
-// 	while (row < 4)
-// 	{
-// 		if (nbr[row][column] != nbr[row][column + 1] 
-// 			&& nbr[row][column] != nbr[row][column + 2] 
-// 			&& nbr[row][column] != nbr[row][column + 3] 
-// 			&& nbr[row][column + 1] != nbr[row][column + 2]
-// 			&& nbr[row][column + 1] != nbr[row][column + 3] 
-// 			&& nbr[row][column + 2] != nbr[row][column + 3])
-// 			{
-// 				row++;
-// 			}
-// 		else
-// 		{
-// 			return (0);
-// 		}
-// 	}
-// 	return (1);
-// }
+	row = 0;
+	column = 0;
+	while (row < 4)
+	{
+		if (nbr[row][column] != nbr[row][column + 1]  
+			&& nbr[row][column] != nbr[row][column + 2] 
+			&& nbr[row][column] != nbr[row][column + 3] 
+			&& nbr[row][column + 1] != nbr[row][column + 2]
+			&& nbr[row][column + 1] != nbr[row][column + 3] 
+			&& nbr[row][column + 2] != nbr[row][column + 3])
+			{
+				row++;
+			}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
 
-// int ft_check_double_column(int *nbr[])
-// {
-// 	int	row;
-// 	int	column;
+int ft_check_double_column(int *nbr[])
+{
+	int	row;
+	int	column;
 
-// 	row = 0;
-// 	column = 0;
-// 	while (column < 4)
-// 	{
-// 		if (nbr[row][column] != nbr[row + 1][column] 
-// 			&& nbr[row][column] != nbr[row + 2][column] 
-// 			&& nbr[row][column] != nbr[row + 3][column]
-// 			&& nbr[row + 1][column] != nbr[row + 2][column]
-// 			&& nbr[row + 1][column] != nbr[row + 3][column] 
-// 			&& nbr[row + 2][column] != nbr[row + 3][column])
-// 			{
-// 				column++;
-// 			}
-// 		else
-// 		{
-// 			return (0);
-// 		}
-// 	}
-// 	return (1);
-// }
+	row = 0;
+	column = 0;
+	while (column < 4)
+	{
+		if (nbr[row][column] != nbr[row + 1][column] 
+			&& nbr[row][column] != nbr[row + 2][column] 
+			&& nbr[row][column] != nbr[row + 3][column]
+			&& nbr[row + 1][column] != nbr[row + 2][column]
+			&& nbr[row + 1][column] != nbr[row + 3][column] 
+			&& nbr[row + 2][column] != nbr[row + 3][column])
+			{
+				column++;
+			}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
 
-// int	ft_check_double(int *nbr[])
-// {
-// 	if (ft_check_double_row != 1)
-// 		return (0);
-// 	if (ft_check_double_column != 1)
-// 		return (0);
-// }
+int	ft_check_double(int *nbr[])
+{
+	if (ft_check_double_row != 1)
+		return (0);
+	if (ft_check_double_column != 1)
+		return (0);
+}
+
+// not using this yet
+// in main.c this would be something like
+// if (ft_check_double(result) != 0) (== 1)

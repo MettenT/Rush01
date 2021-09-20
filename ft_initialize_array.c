@@ -19,9 +19,9 @@ void	ft_initialize_array(int *nbr[])
 
 	row = 0;
 	column = 0;
-	while (row < 4)
+	while (row < 4) // 0, 1, 2, 3
 	{
-		while (column < 4)
+		while (column < 4) // 0, 1, 2, 3
 		{
 			nbr[row][column] = 0;
 			column++;
